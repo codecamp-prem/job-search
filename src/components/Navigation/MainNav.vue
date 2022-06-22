@@ -58,12 +58,11 @@ export default {
       company: "Jobs Search NP",
       url: "https://careers.google.com",
       menuItems: [
-        "Teams",
+        "Jobs",
         "Locations",
         "Life in Nepal",
-        "How we Hire?",
-        "Students",
-        "Jobs",
+        "How we Help?",
+        "Contact Us",
       ],
       isLoggedIn: false,
     };

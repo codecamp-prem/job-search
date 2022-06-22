@@ -13,12 +13,11 @@ describe("MainNav", () => {
     );
     const navigationMenuTexts = navigationMenuItems.map((item) => item.text());
     expect(navigationMenuTexts).toEqual([
-      "Teams",
+      "Jobs",
       "Locations",
       "Life in Nepal",
-      "How we Hire?",
-      "Students",
-      "Jobs",
+      "How we Help?",
+      "Contact Us",
     ]);
   });
   describe("When user is logged out", () => {
