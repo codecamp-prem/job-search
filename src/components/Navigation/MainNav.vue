@@ -4,9 +4,11 @@
       <div
         class="flex flex-nowrap h-full px-8 mx-auto border-b border-solid border-brand-gray-1"
       >
-        <a :href="url" class="flex items-center h-full text-xl">{{
-          company
-        }}</a>
+        <router-link
+          :to="{ name: 'Home' }"
+          class="flex items-center h-full text-xl"
+          >Jobs Search NP</router-link
+        >
         <nav class="h-full ml-12">
           <ul class="flex h-full p-0 m-0 list-none">
             <li
@@ -55,8 +57,6 @@ export default {
   },
   data() {
     return {
-      company: "Jobs Search NP",
-      url: "https://careers.google.com",
       menuItems: [
         "Jobs",
         "Locations",
