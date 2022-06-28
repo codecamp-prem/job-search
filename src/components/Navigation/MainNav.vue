@@ -13,13 +13,15 @@
           <ul class="flex h-full p-0 m-0 list-none">
             <li
               v-for="menuItem in menuItems"
-              :key="menuItem"
+              :key="menuItem.text"
               class="h-full ml-9 first:ml-0"
               data-test="main-nav-list-item"
             >
-              <a href="" class="flex items-center h-full py-2.5">{{
-                menuItem
-              }}</a>
+              <router-link
+                :to="menuItem.url"
+                class="flex items-center h-full py-2.5"
+                >{{ menuItem.text }}</router-link
+              >
             </li>
           </ul>
         </nav>
@@ -58,11 +60,11 @@ export default {
   data() {
     return {
       menuItems: [
-        "Jobs",
-        "Locations",
-        "Life in Nepal",
-        "How we Help?",
-        "Contact Us",
+        { text: "Jobs", url: "/job/results" },
+        { text: "Locations", url: "/" },
+        { text: "Life in Nepal", url: "/" },
+        { text: "How we Help?", url: "/" },
+        { text: "Contact Us", url: "/" },
       ],
       isLoggedIn: false,
     };
