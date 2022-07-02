@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1656415438262" clover="3.2.0">
-  <project timestamp="1656415438263" name="All files">
-    <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="8" coveredelements="8" complexity="0" loc="5" ncloc="5" packages="1" files="2" classes="2"/>
-    <file name="ActionButton.vue" path="C:\Users\HP\Desktop\job-search\src\components\Shared\ActionButton.vue">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="8" count="1" type="stmt"/>
-      <line num="20" count="1" type="stmt"/>
-      <line num="26" count="1" type="stmt"/>
-    </file>
-    <file name="TextInput.vue" path="C:\Users\HP\Desktop\job-search\src\components\Shared\TextInput.vue">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="11" count="1" type="stmt"/>
-      <line num="27" count="2" type="stmt"/>
+<coverage generated="1656772128049" clover="3.2.0">
+  <project timestamp="1656772128049" name="All files">
+    <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0" elements="3" coveredelements="1" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1"/>
+    <file name="JobListing.vue" path="C:\Users\HP\Desktop\job-search\src\components\JobResults\JobListing.vue">
+      <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <line num="51" count="1" type="stmt"/>
+      <line num="61" count="0" type="stmt"/>
     </file>
   </project>
 </coverage>
