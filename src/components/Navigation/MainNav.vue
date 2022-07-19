@@ -64,7 +64,7 @@ export default {
         { text: "Jobs", url: "/job/results" },
         { text: "Locations", url: "/" },
         { text: "Life in Nepal", url: "/" },
-        { text: "How we Help?", url: "/" },
+        { text: "How we Help?", url: "/teams" },
         { text: "Contact Us", url: "/" },
       ],
     };

@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1658059034073" clover="3.2.0">
-  <project timestamp="1658059034074" name="All files">
-    <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3" elements="9" coveredelements="9" complexity="0" loc="4" ncloc="4" packages="1" files="1" classes="1"/>
-    <file name="Accordian.vue" path="C:\Users\HP\Desktop\job-search\src\components\Shared\Accordian.vue">
-      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-      <line num="17" count="1" type="stmt"/>
-      <line num="26" count="2" type="stmt"/>
-      <line num="32" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="37" count="2" type="stmt"/>
+<coverage generated="1658228586389" clover="3.2.0">
+  <project timestamp="1658228586390" name="All files">
+    <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="1" coveredelements="1" complexity="0" loc="1" ncloc="1" packages="1" files="1" classes="1"/>
+    <file name="HeaderContainer.vue" path="C:\Users\HP\Desktop\job-search\src\components\Shared\HeaderContainer.vue">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="10" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

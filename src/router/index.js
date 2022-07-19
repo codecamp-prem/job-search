@@ -4,7 +4,7 @@ const JobResults = () =>
   import(/*webpackChunkName: "jobs"*/ "@/views/JobResultsView.vue");
 const JobView = () =>
   import(/*webpackChunkName: "jobs" */ "@/views/JobView.vue");
-
+const HowCanWeHelpView = () => import("@/views/HowCanWeHelp.vue");
 const routes = [
   {
     path: "/",
@@ -20,6 +20,11 @@ const routes = [
     path: "/job/results/:id",
     name: "JobListing",
     component: JobView,
+  },
+  {
+    path: "/teams",
+    name: "Teams",
+    component: HowCanWeHelpView,
   },
 ];
 
