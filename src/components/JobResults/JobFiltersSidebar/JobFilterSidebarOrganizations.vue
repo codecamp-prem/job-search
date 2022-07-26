@@ -3,29 +3,22 @@
     ><div class="mt-5">
       <fieldset>
         <ul class="flex flex-row flex-wrap">
-          <li class="w-1/2 h-8">
-            <input id="VueTube" type="checkbox" class="mr-3" /><label
-              for="VueTube"
-              >VueTube</label
-            >
-          </li>
-          <li class="w-1/2 h-8">
-            <input id="Between vue and me" type="checkbox" class="mr-3" /><label
-              for="Between vue and me"
-              >Between vue</label
-            >
-          </li>
-          <li class="w-1/2 h-8">
-            <input id="Et Vue Brute" type="checkbox" class="mr-3" /><label
-              for="Et Vue Brute"
-              >Et Vue Brute</label
-            >
-          </li>
-          <li class="w-1/2 h-8">
-            <input id="Vue and a half men" type="checkbox" class="mr-3" /><label
-              for="Vue and a half men"
-              >Vue and a half men</label
-            >
+          <li
+            v-for="organization in UNIQUE_ORGANIZATIONS"
+            :key="organization"
+            class="w-1/2 h-8"
+          >
+            <input
+              :id="organization"
+              v-model="selectedOrganizations"
+              :value="organization"
+              type="checkbox"
+              class="mr-3"
+              :data-test="organization"
+              @change="selectOrganition"
+            /><label :for="organization" data-test="organization">{{
+              organization
+            }}</label>
           </li>
         </ul>
       </fieldset>
@@ -34,11 +27,30 @@
 </template>
 
 <script>
+import { mapGetters, mapMutations } from "vuex";
+import {
+  UNIQUE_ORGANIZATIONS,
+  ADD_SELECTED_ORGANIZATIONS,
+} from "@/store/constants";
 import Accordian from "@/components/Shared/Accordian.vue";
 export default {
   name: "JobFilterSidebarOrganizations",
   components: {
     Accordian,
+  },
+  data() {
+    return {
+      selectedOrganizations: [],
+    };
+  },
+  computed: {
+    ...mapGetters([UNIQUE_ORGANIZATIONS]),
+  },
+  methods: {
+    ...mapMutations([ADD_SELECTED_ORGANIZATIONS]),
+    selectOrganition() {
+      this.ADD_SELECTED_ORGANIZATIONS(this.selectedOrganizations);
+    },
   },
 };
 </script>
