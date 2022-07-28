@@ -9,8 +9,9 @@
           <action-button text="clear filters" type="secondary" />
         </div>
       </div>
-      <accordian header="Job Types"></accordian>
+      <accordian header="Job Test"></accordian>
       <job-filter-sidebar-organizations />
+      <job-filter-sidebar-job-types />
     </section>
   </div>
 </template>
@@ -18,12 +19,14 @@
 import ActionButton from "@/components/Shared/ActionButton.vue";
 import Accordian from "@/components/Shared/Accordian.vue";
 import JobFilterSidebarOrganizations from "@/components/JobResults/JobFiltersSidebar/JobFilterSidebarOrganizations.vue";
+import JobFilterSidebarJobTypes from "@/components/JobResults/JobFiltersSidebar/JobFilterSidebarJobTypes.vue";
 export default {
   name: "JobFilterSidebar",
   components: {
     ActionButton,
     Accordian,
     JobFilterSidebarOrganizations,
+    JobFilterSidebarJobTypes,
   },
 };
 </script>
