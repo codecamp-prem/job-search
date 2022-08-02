@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1659027967506" clover="3.2.0">
-  <project timestamp="1659027967507" name="All files">
-    <metrics statements="60" coveredstatements="60" conditionals="6" coveredconditionals="6" methods="27" coveredmethods="27" elements="93" coveredelements="93" complexity="0" loc="60" ncloc="60" packages="6" files="13" classes="13"/>
+<coverage generated="1659443222232" clover="3.2.0">
+  <project timestamp="1659443222233" name="All files">
+    <metrics statements="56" coveredstatements="56" conditionals="4" coveredconditionals="4" methods="24" coveredmethods="24" elements="84" coveredelements="84" complexity="0" loc="56" ncloc="56" packages="6" files="12" classes="12"/>
     <package name="api">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="getJobs.js" path="C:\Users\HP\Desktop\job-search\src\api\getJobs.js">
@@ -28,14 +28,7 @@
       </file>
     </package>
     <package name="components.Shared">
-      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
-      <file name="Accordian.vue" path="C:\Users\HP\Desktop\job-search\src\components\Shared\Accordian.vue">
-        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="26" count="8" type="stmt"/>
-        <line num="32" count="16" type="cond" truecount="2" falsecount="0"/>
-        <line num="37" count="8" type="stmt"/>
-      </file>
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="ActionButton.vue" path="C:\Users\HP\Desktop\job-search\src\components\Shared\ActionButton.vue">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="8" count="3" type="stmt"/>
