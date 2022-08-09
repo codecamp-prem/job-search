@@ -48,6 +48,7 @@
 </template>
 
 <script>
+import { computed } from "vue";
 export default {
   name: "JobListing",
   props: {
@@ -56,10 +57,15 @@ export default {
       required: true,
     },
   },
-  computed: {
-    jobPageLink() {
-      return `/job/results/${this.job.id}`;
-    },
+  setup(props) {
+    const jobPageLink = computed(() => `/job/results/${props.job.id}`);
+    return { jobPageLink };
   },
+  // ,
+  // computed: {
+  //   jobPageLink() {
+  //     return `/job/results/${this.job.id}`;
+  //   },
+  // },
 };
 </script>

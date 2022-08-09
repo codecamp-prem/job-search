@@ -31,7 +31,7 @@ export default {
     Accordian,
   },
   props: {
-    headers: {
+    header: {
       type: String,
       required: true,
     },
